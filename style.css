@@ -16,6 +16,8 @@
     backgroud: color image repeat position/size */
   
     background: url(./assets/bg-mobile.avif) no-repeat top center/cover;
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da janela */
+
   }
   
   body * {
