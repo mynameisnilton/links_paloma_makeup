@@ -15,14 +15,14 @@
     /*agrupar o backgroud shothands -> atalhos
     backgroud: color image repeat position/size */
   
-    background: url(./assets/bg-mobile.avif) no-repeat top center/cover;
+    background: url(./assets/FundoClaro2.jpg) no-repeat top center/cover;
     min-height: 100vh; /* Garante que o body tenha pelo menos a altura da janela */
 
   }
   
   body * {
     font-family: "Inter", sans-serif;
-    color: #ffffff;
+    color: #be7848;
   }
   #container {
     /* border: 1px solid yellow;*/
@@ -81,8 +81,8 @@
     align-items: center;
     justify-content: center;
     padding: 16px 24px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(138, 79, 61, 0.1);
+    border: 1px solid rgba(160, 102, 64, 0.466);
     border-radius: 8px;
     backdrop-filter: blur(4px);
     text-decoration: none;
@@ -92,10 +92,10 @@
   
   /* hover -> pseudo-selecto*/
   ul li a:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(207, 134, 64, 0.466);
     /* text-color-dark-mode */
   
-    border: 1.5px solid #ffffff;
+    border: 1.5px solid rgba(160, 102, 64, 0.466);
     backdrop-filter: blur(4px);
   }
   
@@ -118,7 +118,7 @@
   }
   
   #social-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(207, 134, 64, 0.466);
     
   }
   
