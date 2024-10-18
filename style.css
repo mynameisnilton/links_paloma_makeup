@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /*
+    background-image: url(./assets/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    */
+  
+    /*agrupar o backgroud shothands -> atalhos
+    backgroud: color image repeat position/size */
+  
+    background: url(./assets/bg-mobile.avif) no-repeat top center/cover;
+  }
+  
+  body * {
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+  }
+  #container {
+    /* border: 1px solid yellow;*/
+    width: 360px;
+    padding: 0 24px;
+    /*height: 712px;*/
+    /*margin-right: auto;*/
+    margin: 50px auto 0px;
+    /*pode ser dessa forma tambem mantendo o margin: auto e adicionado o
+    padding-top: 56px;
+    ou
+    margin-top: 56px*/
+  }
+  /*Imagem do perfil*/
+  #profile {
+    /*border: 1px solid blue;*/
+    text-align: center;
+    padding: 24px;
+    
+  }
+  #profile img {
+    /*border: 1px solid green;*/
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+  
+    /*Display block usa todo elemento de tela. forçando qualquer outro elemento fique embaixo dela.
+    Display inline elementos ficam em linha um do lado do outro
+    DIV é um elemento block
+    IMG é um elemnto inline.. Em elemento inline não é possivel usar o margin: auto.
+    #progile {} -> e o elemento pai, dessa forma podemos adicionar o text-align e ajustar o local que queremos na tela. é uma outra forma de centralização. 
+  
+    */
+  }
+  
+  #profile p {
+    /*border: 1px solid red;*/
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+  /*links*/
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+    padding: 24px 0;
+  }
+  
+  ul li a {
+    /* border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  
+  /* hover -> pseudo-selecto*/
+  ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    /* text-color-dark-mode */
+  
+    border: 1.5px solid #ffffff;
+    backdrop-filter: blur(4px);
+  }
+  
+  #social-links {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 0;
+    font-size: 24px;
+  }
+  
+  #social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+  }
+  
+  #social-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    
+  }
+  
