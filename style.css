@@ -1,124 +1,166 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  body {
-    /*
-    background-image: url(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    */
-  
-    /*agrupar o backgroud shothands -> atalhos
-    backgroud: color image repeat position/size */
-  
-    background: url(./assets/FundoClaro2.jpg) no-repeat top center/cover;
-    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da janela */
+:root {
+  --primary-color: #f5a9b8; /* Pink color for makeup theme */
+  --secondary-color: #8c6a7c;
+  --text-color: #333333;
+  --background-color: #fff5f7;
+  --card-background: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+}
 
-  }
-  
-  body * {
-    font-family: "Inter", sans-serif;
-    color: #693e1b;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+/* Profile */
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  padding: 3px;
+}
+
+#profile h1 {
+  font-weight: 500;
+  margin-top: 16px;
+  color: var(--secondary-color);
+}
+
+#profile p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-top: 8px;
+}
+
+/* Links */
+#links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.link-item {
+  transition: transform 0.3s;
+}
+
+.link-item:hover {
+  transform: scale(1.02);
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--card-background);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 16px 24px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--secondary-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.link-button:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.link-button ion-icon {
+  font-size: 20px;
+}
+
+/* Social Links */
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#social-links a:hover {
+  background: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+#social-links ion-icon {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+#social-links a:hover ion-icon {
+  color: white;
+}
+
+/* Credits */
+.credits {
+  text-align: center;
+  font-size: 12px;
+  color: var(--secondary-color);
+  margin-top: 24px;
+  padding-bottom: 24px;
+}
+
+.credits a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
   #container {
-    /* border: 1px solid yellow;*/
-    width: 360px;
-    padding: 0 24px;
-    /*height: 712px;*/
-    /*margin-right: auto;*/
-    margin: 50px auto 0px;
-    /*pode ser dessa forma tambem mantendo o margin: auto e adicionado o
-    padding-top: 56px;
-    ou
-    margin-top: 56px*/
+    padding: 0 16px;
   }
-  /*Imagem do perfil*/
-  #profile {
-    /*border: 1px solid blue;*/
-    text-align: center;
-    padding: 24px;
-    
+
+  .link-button {
+    padding: 12px 16px;
   }
-  #profile img {
-    /*border: 1px solid green;*/
-    width: 112px;
-    height: 112px;
-    border-radius: 50%;
-  
-    /*Display block usa todo elemento de tela. forçando qualquer outro elemento fique embaixo dela.
-    Display inline elementos ficam em linha um do lado do outro
-    DIV é um elemento block
-    IMG é um elemnto inline.. Em elemento inline não é possivel usar o margin: auto.
-    #progile {} -> e o elemento pai, dessa forma podemos adicionar o text-align e ajustar o local que queremos na tela. é uma outra forma de centralização. 
-  
-    */
-  }
-  
-  #profile p {
-    /*border: 1px solid red;*/
-    font-weight: 500;
-    line-height: 24px;
-    margin-top: 8px;
-  }
-  /*links*/
-  
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  
-    padding: 24px 0;
-  }
-  
-  ul li a {
-    /* border: 1px solid red;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 24px;
-    background: rgba(138, 79, 61, 0.1);
-    border: 1px solid rgba(160, 102, 64, 0.466);
-    border-radius: 8px;
-    backdrop-filter: blur(4px);
-    text-decoration: none;
-    font-weight: 500;
-    transition: background 0.2s;
-  }
-  
-  /* hover -> pseudo-selecto*/
-  ul li a:hover {
-    background: rgba(207, 134, 64, 0.466);
-    /* text-color-dark-mode */
-  
-    border: 1.5px solid rgba(160, 102, 64, 0.466);
-    backdrop-filter: blur(4px);
-  }
-  
-  #social-links {
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding: 24px 0;
-    font-size: 24px;
-  }
-  
+
   #social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    transition: background 0.2s;
-    border-radius: 50%;
+    padding: 12px;
   }
-  
-  #social-links a:hover {
-    background: rgba(207, 134, 64, 0.466);
-    
+
+  #social-links ion-icon {
+    font-size: 20px;
   }
-  
+}

@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-        rel="stylesheet"
-        />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Links</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-    <body>
-        <div id="container">
-        <!--Div caixa generica que não tem nada dentro-->
-        <div id="profile">
-            <img src="./assets/Avatar.jpg" alt="perfil" />
-            <p>@palommamakeup</p>
-        </div>
-        <ul>
-            <li><a href="http://wa.me/5511978675715">Agendamentos</a></li>
-            <!-- <li><a href="#">Baixe meu e-book</a></li>
-            <li><a href="https://github.com/mynameisnilton" target="_blank">Veja meu portfolio</a></li> -->
-            <!-- <li><a href="#">Conheça o Explorer</a></li> -->
-        </ul>
-        <div id="social-links">
-            <!-- <a href="https://github.com/mynameisnilton"target="_blank" >
-            <ion-icon name="logo-github"></ion-icon>  
-            </a> -->
-            <!-- <a href="https://www.instagram.com/palommamakeup/"target="_blank" >
-            <ion-icon name="logo-instagram"></ion-icon>
-            </a> -->
-            <!-- <a href="https://www.linkedin.com/in/nilton-barbosa-b40bb994/"target="_blank" >
-            <ion-icon name="logo-linkedin"></ion-icon>
-            </a> -->
-            <!-- <a href="https://twitter.com/NiltonBarbosa_"target="_blank" >
-            <ion-icon name="logo-twitter"></ion-icon>
-            </a> -->
-        </div>
-        </div>
-        <script
-        type="module"
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-        nomodule
-        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        ></script>
-        
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Links para redes sociais e agendamentos de Paloma Makeup" />
+    
+    <title>Paloma Makeup - Links</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="container">
+        <header id="profile">
+            <img src="./assets/Avatar.jpg" alt="Foto de perfil da Paloma Makeup" />
+            <h1>@palommamakeup</h1>
+            <p>Maquiadora Profissional</p>
+        </header>
 
-    </body>
+        <main>
+            <ul id="links">
+                <li class="link-item">
+                    <a href="http://wa.me/5511978675715" target="_blank" class="link-button">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        Agendamentos
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="https://www.instagram.com/palommamakeup/" target="_blank" class="link-button">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        Instagram
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="link-button">
+                        <ion-icon name="pricetags-outline"></ion-icon>
+                        Tabela de Preços
+                    </a>
+                </li>
+                <li class="link-item">
+                    <a href="#" class="link-button">
+                        <ion-icon name="images-outline"></ion-icon>
+                        Portfólio
+                    </a>
+                </li>
+            </ul>
+        </main>
+
+        <!-- <footer id="social-links">
+            <a href="https://www.instagram.com/palommamakeup/" target="_blank" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="http://wa.me/5511978675715" target="_blank" aria-label="WhatsApp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="#" target="_blank" aria-label="Facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#" target="_blank" aria-label="TikTok">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+        </footer> -->
+        
+        <div class="credits">
+            <p>Desenvolvido por <a href="https://github.com/mynameisnilton" target="_blank">Nilton Barbosa</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
